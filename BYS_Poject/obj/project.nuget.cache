@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "KMQF3YDClRs=",
+  "dgSpecHash": "67VYx8fkWGk=",
   "success": true,
-  "projectFilePath": "C:\\Users\\LENOVO\\source\\repos\\BYS_Poject\\BYS_Poject.csproj",
+  "projectFilePath": "C:\\Users\\LENOVO\\source\\repos\\bysproject\\BYS_Poject\\BYS_Poject.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\LENOVO\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\LENOVO\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",

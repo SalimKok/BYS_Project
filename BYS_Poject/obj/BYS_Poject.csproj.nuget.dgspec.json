@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\LENOVO\\source\\repos\\BYS_Poject\\BYS_Poject.csproj": {}
+    "C:\\Users\\LENOVO\\source\\repos\\bysproject\\BYS_Poject\\BYS_Poject.csproj": {}
   },
   "projects": {
-    "C:\\Users\\LENOVO\\source\\repos\\BYS_Poject\\BYS_Poject.csproj": {
+    "C:\\Users\\LENOVO\\source\\repos\\bysproject\\BYS_Poject\\BYS_Poject.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\LENOVO\\source\\repos\\BYS_Poject\\BYS_Poject.csproj",
+        "projectUniqueName": "C:\\Users\\LENOVO\\source\\repos\\bysproject\\BYS_Poject\\BYS_Poject.csproj",
         "projectName": "BYS_Poject",
-        "projectPath": "C:\\Users\\LENOVO\\source\\repos\\BYS_Poject\\BYS_Poject.csproj",
+        "projectPath": "C:\\Users\\LENOVO\\source\\repos\\bysproject\\BYS_Poject\\BYS_Poject.csproj",
         "packagesPath": "C:\\Users\\LENOVO\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\LENOVO\\source\\repos\\BYS_Poject\\obj\\",
+        "outputPath": "C:\\Users\\LENOVO\\source\\repos\\bysproject\\BYS_Poject\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
