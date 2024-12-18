@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\LENOVO\\source\\repos\\Project\\Project.csproj": {}
+    "C:\\Users\\LENOVO\\source\\repos\\bysproject\\Project.csproj": {}
   },
   "projects": {
-    "C:\\Users\\LENOVO\\source\\repos\\Project\\Project.csproj": {
+    "C:\\Users\\LENOVO\\source\\repos\\bysproject\\Project.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\LENOVO\\source\\repos\\Project\\Project.csproj",
+        "projectUniqueName": "C:\\Users\\LENOVO\\source\\repos\\bysproject\\Project.csproj",
         "projectName": "Project",
-        "projectPath": "C:\\Users\\LENOVO\\source\\repos\\Project\\Project.csproj",
+        "projectPath": "C:\\Users\\LENOVO\\source\\repos\\bysproject\\Project.csproj",
         "packagesPath": "C:\\Users\\LENOVO\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\LENOVO\\source\\repos\\Project\\obj\\",
+        "outputPath": "C:\\Users\\LENOVO\\source\\repos\\bysproject\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
