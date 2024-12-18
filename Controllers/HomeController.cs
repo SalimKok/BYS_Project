@@ -1,6 +1,6 @@
 using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
-using SmartCourseSelectorAPI.Models;
+using Project.Models;
 
 namespace SmartCourseSelectorAPI.Controllers
 {
