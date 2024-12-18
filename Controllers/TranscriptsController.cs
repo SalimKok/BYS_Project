@@ -5,53 +5,53 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using Project.Models;
+using SmartCourseSelectorWeb.Models;
 
 namespace StudentIMS.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class CoursesController : ControllerBase
+    public class TranscriptsController : ControllerBase
     {
         private readonly ApplicationDbContext _context;
 
-        public CoursesController(ApplicationDbContext context)
+        public TranscriptsController(ApplicationDbContext context)
         {
             _context = context;
         }
 
-        // GET: api/Courses
+        // GET: api/Transcripts
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Course>>> GetCourses()
+        public async Task<ActionResult<IEnumerable<Transcript>>> GetTranscripts()
         {
-            return await _context.Courses.ToListAsync();
+            return await _context.Transcripts.ToListAsync();
         }
 
-        // GET: api/Courses/5
+        // GET: api/Transcripts/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<Course>> GetCourse(int id)
+        public async Task<ActionResult<Transcript>> GetTranscript(int id)
         {
-            var course = await _context.Courses.FindAsync(id);
+            var transcript = await _context.Transcripts.FindAsync(id);
 
-            if (course == null)
+            if (transcript == null)
             {
                 return NotFound();
             }
 
-            return course;
+            return transcript;
         }
 
-        // PUT: api/Courses/5
+        // PUT: api/Transcripts/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutCourse(int id, Course course)
+        public async Task<IActionResult> PutTranscript(int id, Transcript transcript)
         {
-            if (id != course.CourseID)
+            if (id != transcript.TranscriptID)
             {
                 return BadRequest();
             }
 
-            _context.Entry(course).State = EntityState.Modified;
+            _context.Entry(transcript).State = EntityState.Modified;
 
             try
             {
@@ -59,7 +59,7 @@ namespace StudentIMS.Controllers
             }
             catch (DbUpdateConcurrencyException)
             {
-                if (!CourseExists(id))
+                if (!TranscriptExists(id))
                 {
                     return NotFound();
                 }
@@ -72,36 +72,36 @@ namespace StudentIMS.Controllers
             return NoContent();
         }
 
-        // POST: api/Courses
+        // POST: api/Transcripts
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost]
-        public async Task<ActionResult<Course>> PostCourse(Course course)
+        public async Task<ActionResult<Transcript>> PostTranscript(Transcript transcript)
         {
-            _context.Courses.Add(course);
+            _context.Transcripts.Add(transcript);
             await _context.SaveChangesAsync();
 
-            return CreatedAtAction("GetCourse", new { id = course.CourseID }, course);
+            return CreatedAtAction("GetTranscript", new { id = transcript.TranscriptID }, transcript);
         }
 
-        // DELETE: api/Courses/5
+        // DELETE: api/Transcripts/5
         [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteCourse(int id)
+        public async Task<IActionResult> DeleteTranscript(int id)
         {
-            var course = await _context.Courses.FindAsync(id);
-            if (course == null)
+            var transcript = await _context.Transcripts.FindAsync(id);
+            if (transcript == null)
             {
                 return NotFound();
             }
 
-            _context.Courses.Remove(course);
+            _context.Transcripts.Remove(transcript);
             await _context.SaveChangesAsync();
 
             return NoContent();
         }
 
-        private bool CourseExists(int id)
+        private bool TranscriptExists(int id)
         {
-            return _context.Courses.Any(e => e.CourseID == id);
+            return _context.Transcripts.Any(e => e.TranscriptID == id);
         }
     }
 }

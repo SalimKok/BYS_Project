@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using SmartCourseSelectorWeb.Models;
+using Project.Models;
 
 namespace SmartCourseSelectorWeb.Controllers
 {
