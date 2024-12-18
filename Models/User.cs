@@ -1,4 +1,4 @@
-﻿namespace SmartCourseSelectorWeb.Models
+﻿namespace Project.Models
 {
     public class User
     {

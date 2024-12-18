@@ -1,7 +1,7 @@
-﻿using SmartCourseSelectorWeb.Models;
+﻿using Project.Models;
 using System.ComponentModel.DataAnnotations;
 
-namespace StudentIMS.Models
+namespace Project.Models
 {
     public class CourseQuota
     {

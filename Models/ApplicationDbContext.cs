@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using StudentIMS.Models;
+using Project.Models;
 
-namespace SmartCourseSelectorWeb.Models
+namespace Project.Models
 {
     public class ApplicationDbContext : DbContext
     {

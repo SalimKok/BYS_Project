@@ -1,7 +1,7 @@
 ﻿
 using System.ComponentModel.DataAnnotations;
 
-namespace SmartCourseSelectorWeb.Models
+namespace Project.Models
 {
     public class Course
     {
