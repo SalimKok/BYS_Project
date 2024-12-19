@@ -8,7 +8,7 @@ using Project.Models;
 
 #nullable disable
 
-namespace StudentIMS.Migrations
+namespace Project.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
     partial class ApplicationDbContextModelSnapshot : ModelSnapshot

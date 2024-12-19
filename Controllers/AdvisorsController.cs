@@ -2,7 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Project.Models;
 
-namespace SmartCourseSelectorWeb.Controllers
+namespace Project.Controllers
 {
     [Route("api/AdvisorController")]
     [ApiController]

@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Project.Models;
 
-namespace StudentIMS.Controllers
+namespace Project.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
