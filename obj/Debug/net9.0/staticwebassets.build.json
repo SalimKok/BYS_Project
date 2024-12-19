@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "l/Y0UMTAr8d8G3acG3n7jM07WW7mTSKjYs3nmyb65cc=",
+  "Hash": "0oZzjbBTfNmGE8yBy2o0z8nRIjJRoXZoOzkNxnbXPb4=",
   "Source": "Project",
   "BasePath": "_content/Project",
   "Mode": "Default",
@@ -1046,6 +1046,27 @@
       "OriginalItemSpec": "C:\\Users\\LENOVO\\source\\repos\\bysproject\\wwwroot\\lib\\jquery-validation-unobtrusive\\dist\\jquery.validate.unobtrusive.js"
     },
     {
+      "Identity": "C:\\Users\\LENOVO\\source\\repos\\bysproject\\obj\\Debug\\net9.0\\compressed\\tokq69bg0c-j92s5ok0j7.gz",
+      "SourceId": "Project",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\LENOVO\\source\\repos\\bysproject\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "_content/Project",
+      "RelativePath": "css/course-selection#[.{fingerprint=j92s5ok0j7}]?.css.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\LENOVO\\source\\repos\\bysproject\\wwwroot\\css\\course-selection.css",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "4c326eks4b",
+      "Integrity": "ZHtcPVuKVIcs4Kyez5XqKfachdRvGwt39gkcD+gTyYU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\LENOVO\\source\\repos\\bysproject\\wwwroot\\css\\course-selection.css"
+    },
+    {
       "Identity": "C:\\Users\\LENOVO\\source\\repos\\bysproject\\obj\\Debug\\net9.0\\compressed\\tsy4bljmj7-s35ty4nyc5.gz",
       "SourceId": "Project",
       "SourceType": "Discovered",
@@ -1256,12 +1277,12 @@
       "OriginalItemSpec": "C:\\Users\\LENOVO\\source\\repos\\bysproject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\LENOVO\\source\\repos\\bysproject\\obj\\Debug\\net9.0\\compressed\\ydb8vxti1i-b9sayid5wm.gz",
+      "Identity": "C:\\Users\\LENOVO\\source\\repos\\bysproject\\obj\\Debug\\net9.0\\compressed\\ydb8vxti1i-xg19j4z4bq.gz",
       "SourceId": "Project",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\LENOVO\\source\\repos\\bysproject\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "_content/Project",
-      "RelativePath": "css/site#[.{fingerprint=b9sayid5wm}]?.css.gz",
+      "RelativePath": "css/site#[.{fingerprint=xg19j4z4bq}]?.css.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -1270,8 +1291,8 @@
       "RelatedAsset": "C:\\Users\\LENOVO\\source\\repos\\bysproject\\wwwroot\\css\\site.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "wf4wcyqcqt",
-      "Integrity": "fNKkLSNFLZMVTc2zVrpMXQqOwPU3sU4GWcfEbCR2V1I=",
+      "Fingerprint": "sfpdqc0hzy",
+      "Integrity": "CAzhYeGQlYtkaTij9LtXEZqp99nnLe+D+AkgmkgN6X8=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\LENOVO\\source\\repos\\bysproject\\wwwroot\\css\\site.css"
@@ -1403,6 +1424,27 @@
       "OriginalItemSpec": "C:\\Users\\LENOVO\\source\\repos\\bysproject\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\Project.bundle.scp.css"
     },
     {
+      "Identity": "C:\\Users\\LENOVO\\source\\repos\\bysproject\\wwwroot\\css\\course-selection.css",
+      "SourceId": "Project",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\LENOVO\\source\\repos\\bysproject\\wwwroot\\",
+      "BasePath": "_content/Project",
+      "RelativePath": "css/course-selection#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "j92s5ok0j7",
+      "Integrity": "iUCAIGU813CZA+/u0JJZ2vbfdAp60s57FNhg625FUoA=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\course-selection.css"
+    },
+    {
       "Identity": "C:\\Users\\LENOVO\\source\\repos\\bysproject\\wwwroot\\css\\site.css",
       "SourceId": "Project",
       "SourceType": "Discovered",
@@ -1417,8 +1459,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "b9sayid5wm",
-      "Integrity": "j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg=",
+      "Fingerprint": "xg19j4z4bq",
+      "Integrity": "sSJDgLIKDGQF2EI9sh+oUACZFB0+2l2TmrmAx0ptiZw=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
@@ -1443,6 +1485,48 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\LENOVO\\source\\repos\\bysproject\\wwwroot\\Images\\Student.png",
+      "SourceId": "Project",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\LENOVO\\source\\repos\\bysproject\\wwwroot\\",
+      "BasePath": "_content/Project",
+      "RelativePath": "Images/Student#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "oetttwenva",
+      "Integrity": "4Gh9Z6Eygb7NbjKwsHrp6c4UYvAm2BdrL/h9sRolW/U=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\Student.png"
+    },
+    {
+      "Identity": "C:\\Users\\LENOVO\\source\\repos\\bysproject\\wwwroot\\Images\\teacher.png",
+      "SourceId": "Project",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\LENOVO\\source\\repos\\bysproject\\wwwroot\\",
+      "BasePath": "_content/Project",
+      "RelativePath": "Images/teacher#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "dqipkv9vji",
+      "Integrity": "Feu4r8uQXI8NdiAXyq9OnfmUSoVNtzKidXfX3o0430k=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\teacher.png"
     },
     {
       "Identity": "C:\\Users\\LENOVO\\source\\repos\\bysproject\\wwwroot\\js\\site.js",
@@ -2728,13 +2812,13 @@
   ],
   "Endpoints": [
     {
-      "Route": "css/site.b9sayid5wm.css",
-      "AssetFile": "C:\\Users\\LENOVO\\source\\repos\\bysproject\\obj\\Debug\\net9.0\\compressed\\ydb8vxti1i-b9sayid5wm.gz",
+      "Route": "css/course-selection.css",
+      "AssetFile": "C:\\Users\\LENOVO\\source\\repos\\bysproject\\obj\\Debug\\net9.0\\compressed\\tokq69bg0c-j92s5ok0j7.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.003125000000"
+          "Quality": "0.001321003963"
         }
       ],
       "ResponseHeaders": [
@@ -2744,15 +2828,152 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "319"
+          "Value": "756"
         },
         {
           "Name": "ETag",
-          "Value": "\"fNKkLSNFLZMVTc2zVrpMXQqOwPU3sU4GWcfEbCR2V1I=\""
+          "Value": "\"ZHtcPVuKVIcs4Kyez5XqKfachdRvGwt39gkcD+gTyYU=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 18 Dec 2024 19:30:36 GMT"
+          "Value": "Thu, 19 Dec 2024 11:25:35 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"iUCAIGU813CZA+/u0JJZ2vbfdAp60s57FNhg625FUoA=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-iUCAIGU813CZA+/u0JJZ2vbfdAp60s57FNhg625FUoA="
+        }
+      ]
+    },
+    {
+      "Route": "css/course-selection.css",
+      "AssetFile": "C:\\Users\\LENOVO\\source\\repos\\bysproject\\wwwroot\\css\\course-selection.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2192"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"iUCAIGU813CZA+/u0JJZ2vbfdAp60s57FNhg625FUoA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 19 Dec 2024 11:25:35 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-iUCAIGU813CZA+/u0JJZ2vbfdAp60s57FNhg625FUoA="
+        }
+      ]
+    },
+    {
+      "Route": "css/course-selection.css.gz",
+      "AssetFile": "C:\\Users\\LENOVO\\source\\repos\\bysproject\\obj\\Debug\\net9.0\\compressed\\tokq69bg0c-j92s5ok0j7.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "756"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ZHtcPVuKVIcs4Kyez5XqKfachdRvGwt39gkcD+gTyYU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 19 Dec 2024 11:25:35 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-ZHtcPVuKVIcs4Kyez5XqKfachdRvGwt39gkcD+gTyYU="
+        }
+      ]
+    },
+    {
+      "Route": "css/course-selection.j92s5ok0j7.css",
+      "AssetFile": "C:\\Users\\LENOVO\\source\\repos\\bysproject\\obj\\Debug\\net9.0\\compressed\\tokq69bg0c-j92s5ok0j7.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.001321003963"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "756"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ZHtcPVuKVIcs4Kyez5XqKfachdRvGwt39gkcD+gTyYU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 19 Dec 2024 11:25:35 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2772,26 +2993,179 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg=\""
+          "Value": "W/\"iUCAIGU813CZA+/u0JJZ2vbfdAp60s57FNhg625FUoA=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "b9sayid5wm"
+          "Value": "j92s5ok0j7"
         },
         {
           "Name": "label",
-          "Value": "css/site.css"
+          "Value": "css/course-selection.css"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg="
+          "Value": "sha256-iUCAIGU813CZA+/u0JJZ2vbfdAp60s57FNhg625FUoA="
         }
       ]
     },
     {
-      "Route": "css/site.b9sayid5wm.css",
+      "Route": "css/course-selection.j92s5ok0j7.css",
+      "AssetFile": "C:\\Users\\LENOVO\\source\\repos\\bysproject\\wwwroot\\css\\course-selection.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2192"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"iUCAIGU813CZA+/u0JJZ2vbfdAp60s57FNhg625FUoA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 19 Dec 2024 11:25:35 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "j92s5ok0j7"
+        },
+        {
+          "Name": "label",
+          "Value": "css/course-selection.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-iUCAIGU813CZA+/u0JJZ2vbfdAp60s57FNhg625FUoA="
+        }
+      ]
+    },
+    {
+      "Route": "css/course-selection.j92s5ok0j7.css.gz",
+      "AssetFile": "C:\\Users\\LENOVO\\source\\repos\\bysproject\\obj\\Debug\\net9.0\\compressed\\tokq69bg0c-j92s5ok0j7.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "756"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ZHtcPVuKVIcs4Kyez5XqKfachdRvGwt39gkcD+gTyYU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 19 Dec 2024 11:25:35 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "j92s5ok0j7"
+        },
+        {
+          "Name": "label",
+          "Value": "css/course-selection.css.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-ZHtcPVuKVIcs4Kyez5XqKfachdRvGwt39gkcD+gTyYU="
+        }
+      ]
+    },
+    {
+      "Route": "css/site.css",
+      "AssetFile": "C:\\Users\\LENOVO\\source\\repos\\bysproject\\obj\\Debug\\net9.0\\compressed\\ydb8vxti1i-xg19j4z4bq.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.003154574132"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "316"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"CAzhYeGQlYtkaTij9LtXEZqp99nnLe+D+AkgmkgN6X8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 19 Dec 2024 11:15:39 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"sSJDgLIKDGQF2EI9sh+oUACZFB0+2l2TmrmAx0ptiZw=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-sSJDgLIKDGQF2EI9sh+oUACZFB0+2l2TmrmAx0ptiZw="
+        }
+      ]
+    },
+    {
+      "Route": "css/site.css",
       "AssetFile": "C:\\Users\\LENOVO\\source\\repos\\bysproject\\wwwroot\\css\\site.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -2801,7 +3175,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "667"
+          "Value": "579"
         },
         {
           "Name": "Content-Type",
@@ -2809,11 +3183,156 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg=\""
+          "Value": "\"sSJDgLIKDGQF2EI9sh+oUACZFB0+2l2TmrmAx0ptiZw=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 18 Dec 2024 19:30:36 GMT"
+          "Value": "Thu, 19 Dec 2024 11:15:39 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-sSJDgLIKDGQF2EI9sh+oUACZFB0+2l2TmrmAx0ptiZw="
+        }
+      ]
+    },
+    {
+      "Route": "css/site.css.gz",
+      "AssetFile": "C:\\Users\\LENOVO\\source\\repos\\bysproject\\obj\\Debug\\net9.0\\compressed\\ydb8vxti1i-xg19j4z4bq.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "316"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"CAzhYeGQlYtkaTij9LtXEZqp99nnLe+D+AkgmkgN6X8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 19 Dec 2024 11:15:39 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-CAzhYeGQlYtkaTij9LtXEZqp99nnLe+D+AkgmkgN6X8="
+        }
+      ]
+    },
+    {
+      "Route": "css/site.xg19j4z4bq.css",
+      "AssetFile": "C:\\Users\\LENOVO\\source\\repos\\bysproject\\obj\\Debug\\net9.0\\compressed\\ydb8vxti1i-xg19j4z4bq.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.003154574132"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "316"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"CAzhYeGQlYtkaTij9LtXEZqp99nnLe+D+AkgmkgN6X8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 19 Dec 2024 11:15:39 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"sSJDgLIKDGQF2EI9sh+oUACZFB0+2l2TmrmAx0ptiZw=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "xg19j4z4bq"
+        },
+        {
+          "Name": "label",
+          "Value": "css/site.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-sSJDgLIKDGQF2EI9sh+oUACZFB0+2l2TmrmAx0ptiZw="
+        }
+      ]
+    },
+    {
+      "Route": "css/site.xg19j4z4bq.css",
+      "AssetFile": "C:\\Users\\LENOVO\\source\\repos\\bysproject\\wwwroot\\css\\site.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "579"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"sSJDgLIKDGQF2EI9sh+oUACZFB0+2l2TmrmAx0ptiZw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 19 Dec 2024 11:15:39 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2823,7 +3342,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "b9sayid5wm"
+          "Value": "xg19j4z4bq"
         },
         {
           "Name": "label",
@@ -2831,13 +3350,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg="
+          "Value": "sha256-sSJDgLIKDGQF2EI9sh+oUACZFB0+2l2TmrmAx0ptiZw="
         }
       ]
     },
     {
-      "Route": "css/site.b9sayid5wm.css.gz",
-      "AssetFile": "C:\\Users\\LENOVO\\source\\repos\\bysproject\\obj\\Debug\\net9.0\\compressed\\ydb8vxti1i-b9sayid5wm.gz",
+      "Route": "css/site.xg19j4z4bq.css.gz",
+      "AssetFile": "C:\\Users\\LENOVO\\source\\repos\\bysproject\\obj\\Debug\\net9.0\\compressed\\ydb8vxti1i-xg19j4z4bq.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2846,7 +3365,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "319"
+          "Value": "316"
         },
         {
           "Name": "Content-Type",
@@ -2854,11 +3373,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"fNKkLSNFLZMVTc2zVrpMXQqOwPU3sU4GWcfEbCR2V1I=\""
+          "Value": "\"CAzhYeGQlYtkaTij9LtXEZqp99nnLe+D+AkgmkgN6X8=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 18 Dec 2024 19:30:36 GMT"
+          "Value": "Thu, 19 Dec 2024 11:15:39 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2876,7 +3395,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "b9sayid5wm"
+          "Value": "xg19j4z4bq"
         },
         {
           "Name": "label",
@@ -2884,144 +3403,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-fNKkLSNFLZMVTc2zVrpMXQqOwPU3sU4GWcfEbCR2V1I="
-        }
-      ]
-    },
-    {
-      "Route": "css/site.css",
-      "AssetFile": "C:\\Users\\LENOVO\\source\\repos\\bysproject\\obj\\Debug\\net9.0\\compressed\\ydb8vxti1i-b9sayid5wm.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.003125000000"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "319"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"fNKkLSNFLZMVTc2zVrpMXQqOwPU3sU4GWcfEbCR2V1I=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Wed, 18 Dec 2024 19:30:36 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg=\""
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg="
-        }
-      ]
-    },
-    {
-      "Route": "css/site.css",
-      "AssetFile": "C:\\Users\\LENOVO\\source\\repos\\bysproject\\wwwroot\\css\\site.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "667"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Wed, 18 Dec 2024 19:30:36 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg="
-        }
-      ]
-    },
-    {
-      "Route": "css/site.css.gz",
-      "AssetFile": "C:\\Users\\LENOVO\\source\\repos\\bysproject\\obj\\Debug\\net9.0\\compressed\\ydb8vxti1i-b9sayid5wm.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "319"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"fNKkLSNFLZMVTc2zVrpMXQqOwPU3sU4GWcfEbCR2V1I=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Wed, 18 Dec 2024 19:30:36 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-fNKkLSNFLZMVTc2zVrpMXQqOwPU3sU4GWcfEbCR2V1I="
+          "Value": "sha256-CAzhYeGQlYtkaTij9LtXEZqp99nnLe+D+AkgmkgN6X8="
         }
       ]
     },
@@ -3320,6 +3702,170 @@
         {
           "Name": "integrity",
           "Value": "sha256-jcY0RXFOlcp4VNTCcYQtWVZZBlr+ZY+AOv6/0S5dnF8="
+        }
+      ]
+    },
+    {
+      "Route": "Images/Student.oetttwenva.png",
+      "AssetFile": "C:\\Users\\LENOVO\\source\\repos\\bysproject\\wwwroot\\Images\\Student.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "50780"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"4Gh9Z6Eygb7NbjKwsHrp6c4UYvAm2BdrL/h9sRolW/U=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 19 Dec 2024 07:30:21 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "oetttwenva"
+        },
+        {
+          "Name": "label",
+          "Value": "Images/Student.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-4Gh9Z6Eygb7NbjKwsHrp6c4UYvAm2BdrL/h9sRolW/U="
+        }
+      ]
+    },
+    {
+      "Route": "Images/Student.png",
+      "AssetFile": "C:\\Users\\LENOVO\\source\\repos\\bysproject\\wwwroot\\Images\\Student.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "50780"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"4Gh9Z6Eygb7NbjKwsHrp6c4UYvAm2BdrL/h9sRolW/U=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 19 Dec 2024 07:30:21 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-4Gh9Z6Eygb7NbjKwsHrp6c4UYvAm2BdrL/h9sRolW/U="
+        }
+      ]
+    },
+    {
+      "Route": "Images/teacher.dqipkv9vji.png",
+      "AssetFile": "C:\\Users\\LENOVO\\source\\repos\\bysproject\\wwwroot\\Images\\teacher.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "21781"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Feu4r8uQXI8NdiAXyq9OnfmUSoVNtzKidXfX3o0430k=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 19 Dec 2024 07:30:32 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "dqipkv9vji"
+        },
+        {
+          "Name": "label",
+          "Value": "Images/teacher.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Feu4r8uQXI8NdiAXyq9OnfmUSoVNtzKidXfX3o0430k="
+        }
+      ]
+    },
+    {
+      "Route": "Images/teacher.png",
+      "AssetFile": "C:\\Users\\LENOVO\\source\\repos\\bysproject\\wwwroot\\Images\\teacher.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "21781"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Feu4r8uQXI8NdiAXyq9OnfmUSoVNtzKidXfX3o0430k=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 19 Dec 2024 07:30:32 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Feu4r8uQXI8NdiAXyq9OnfmUSoVNtzKidXfX3o0430k="
         }
       ]
     },

@@ -255,7 +255,6 @@ C:\Users\LENOVO\source\repos\bysproject\obj\Debug\net9.0\scopedcss\Pages\Shared\
 C:\Users\LENOVO\source\repos\bysproject\obj\Debug\net9.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
 C:\Users\LENOVO\source\repos\bysproject\obj\Debug\net9.0\scopedcss\bundle\Project.styles.css
 C:\Users\LENOVO\source\repos\bysproject\obj\Debug\net9.0\scopedcss\projectbundle\Project.bundle.scp.css
-C:\Users\LENOVO\source\repos\bysproject\obj\Debug\net9.0\compressed\ydb8vxti1i-b9sayid5wm.gz
 C:\Users\LENOVO\source\repos\bysproject\obj\Debug\net9.0\compressed\ir86nxngkb-61n19gt1b8.gz
 C:\Users\LENOVO\source\repos\bysproject\obj\Debug\net9.0\compressed\pny6gljfzy-xtxxf3hu2r.gz
 C:\Users\LENOVO\source\repos\bysproject\obj\Debug\net9.0\compressed\h5kjrugxa6-bqjiyaj88i.gz
@@ -335,3 +334,5 @@ C:\Users\LENOVO\source\repos\bysproject\obj\Debug\net9.0\refint\Project.dll
 C:\Users\LENOVO\source\repos\bysproject\obj\Debug\net9.0\Project.pdb
 C:\Users\LENOVO\source\repos\bysproject\obj\Debug\net9.0\Project.genruntimeconfig.cache
 C:\Users\LENOVO\source\repos\bysproject\obj\Debug\net9.0\ref\Project.dll
+C:\Users\LENOVO\source\repos\bysproject\obj\Debug\net9.0\compressed\ydb8vxti1i-xg19j4z4bq.gz
+C:\Users\LENOVO\source\repos\bysproject\obj\Debug\net9.0\compressed\tokq69bg0c-j92s5ok0j7.gz

@@ -46,6 +46,7 @@ C:\Users\LENOVO\source\repos\bysproject\wwwroot\lib\bootstrap\dist\js\bootstrap.
 C:\Users\LENOVO\source\repos\bysproject\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.css
 C:\Users\LENOVO\source\repos\bysproject\wwwroot\js\site.js
 C:\Users\LENOVO\source\repos\bysproject\wwwroot\lib\jquery-validation-unobtrusive\dist\jquery.validate.unobtrusive.js
+C:\Users\LENOVO\source\repos\bysproject\wwwroot\css\course-selection.css
 C:\Users\LENOVO\source\repos\bysproject\wwwroot\lib\bootstrap\dist\css\bootstrap.css
 C:\Users\LENOVO\source\repos\bysproject\wwwroot\lib\jquery-validation\dist\jquery.validate.min.js
 C:\Users\LENOVO\source\repos\bysproject\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.css.map
@@ -60,8 +61,11 @@ C:\Users\LENOVO\source\repos\bysproject\wwwroot\lib\bootstrap\dist\css\bootstrap
 C:\Users\LENOVO\source\repos\bysproject\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.min.css.map
 C:\Users\LENOVO\source\repos\bysproject\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.min.css.map
 C:\Users\LENOVO\source\repos\bysproject\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.min.css.map
+wwwroot\css\course-selection.css
 wwwroot\css\site.css
 wwwroot\favicon.ico
+wwwroot\Images\Student.png
+wwwroot\Images\teacher.png
 wwwroot\js\site.js
 wwwroot\lib\bootstrap\dist\css\bootstrap.css
 wwwroot\lib\bootstrap\dist\css\bootstrap.css.map

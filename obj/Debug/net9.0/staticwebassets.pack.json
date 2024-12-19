@@ -5,6 +5,18 @@
       "PackagePath": "staticwebassets\\Project.974eooe9rd.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\LENOVO\\source\\repos\\bysproject\\wwwroot\\Images\\Student.png",
+      "PackagePath": "staticwebassets\\Images\\Student.png"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\source\\repos\\bysproject\\wwwroot\\Images\\teacher.png",
+      "PackagePath": "staticwebassets\\Images\\teacher.png"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\source\\repos\\bysproject\\wwwroot\\css\\course-selection.css",
+      "PackagePath": "staticwebassets\\css\\course-selection.css"
+    },
+    {
       "Id": "C:\\Users\\LENOVO\\source\\repos\\bysproject\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
