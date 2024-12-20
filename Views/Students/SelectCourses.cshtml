@@ -1,3 +1,4 @@
+﻿﻿
 ﻿<div class="table-container">
     <form id="form" method="post" asp-action="SubmitSelectedCourses" asp-controller="Students">
         <table class="table table-bordered">
@@ -11,8 +12,10 @@
             </thead>
 
             <tbody>
-                @foreach (var selection in Model)
+
+                @foreach (var selection in Model.Course)
                 {
+                    <div id="studentInfo" data-student-id="@Model.StudentIDI"></div>
                     <tr>
                         <td>@selection.CourseName</td>
                         <td>@(selection.IsMandatory ? "Mandatory" : "-")</td>
@@ -39,6 +42,9 @@
         // Seçilen derslerin ID'lerini al
         const selectedCourseIds = Array.from(document.querySelectorAll("input[name='SelectedCourseIds']:checked"))
             .map(checkbox => checkbox.value);
+            const StudentId = document.getElementById("studentInfo").dataset.studentId;
+
+
 
         // Eğer hiçbir ders seçilmemişse bildirim göster ve işlemi durdur
         if (selectedCourseIds.length === 0) {
@@ -47,12 +53,12 @@
         }
 
         // AJAX isteği gönder
-        fetch("https://localhost:7199/api/Students/SubmitSelectedCourses", {
+        fetch("https://localhost:7199/api/StudentController/SubmitSelectedCourses", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
             },
-            body: JSON.stringify({ SelectedCourseIds: selectedCourseIds })
+            body: JSON.stringify({StudentId:StudentId, SelectedCourseIds: selectedCourseIds })
         })
         .then(response => {
             if (response.ok) {

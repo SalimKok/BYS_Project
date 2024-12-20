@@ -3,24 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\LENOVO\\source\\repos\\bysproject\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{FBB6BCE6-8A4B-4916-97B2-67CC5824C5AF}|Project.csproj|c:\\users\\lenovo\\source\\repos\\bysproject\\wwwroot\\css\\course-selection.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{FBB6BCE6-8A4B-4916-97B2-67CC5824C5AF}|Project.csproj|solutionrelative:wwwroot\\css\\course-selection.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FBB6BCE6-8A4B-4916-97B2-67CC5824C5AF}|Project.csproj|c:\\users\\lenovo\\source\\repos\\bysproject\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{FBB6BCE6-8A4B-4916-97B2-67CC5824C5AF}|Project.csproj|solutionrelative:wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FBB6BCE6-8A4B-4916-97B2-67CC5824C5AF}|Project.csproj|c:\\users\\lenovo\\source\\repos\\bysproject\\views\\advisors\\approvecourses.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{FBB6BCE6-8A4B-4916-97B2-67CC5824C5AF}|Project.csproj|solutionrelative:views\\advisors\\approvecourses.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FBB6BCE6-8A4B-4916-97B2-67CC5824C5AF}|Project.csproj|c:\\users\\lenovo\\source\\repos\\bysproject\\wwwroot\\css\\stylesheet.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{FBB6BCE6-8A4B-4916-97B2-67CC5824C5AF}|Project.csproj|solutionrelative:wwwroot\\css\\stylesheet.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FBB6BCE6-8A4B-4916-97B2-67CC5824C5AF}|Project.csproj|c:\\users\\lenovo\\source\\repos\\bysproject\\views\\account\\loginuser.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{FBB6BCE6-8A4B-4916-97B2-67CC5824C5AF}|Project.csproj|solutionrelative:views\\account\\loginuser.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{FBB6BCE6-8A4B-4916-97B2-67CC5824C5AF}|Project.csproj|c:\\users\\lenovo\\source\\repos\\bysproject\\models\\studentandcourse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FBB6BCE6-8A4B-4916-97B2-67CC5824C5AF}|Project.csproj|solutionrelative:models\\studentandcourse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,71 +14,19 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ApproveCourses.cshtml",
-              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\bysproject\\Views\\Advisors\\ApproveCourses.cshtml",
-              "RelativeDocumentMoniker": "Views\\Advisors\\ApproveCourses.cshtml",
-              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\bysproject\\Views\\Advisors\\ApproveCourses.cshtml",
-              "RelativeToolTip": "Views\\Advisors\\ApproveCourses.cshtml",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-19T11:22:40.764Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "site.css",
-              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\bysproject\\wwwroot\\css\\site.css",
-              "RelativeDocumentMoniker": "wwwroot\\css\\site.css",
-              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\bysproject\\wwwroot\\css\\site.css",
-              "RelativeToolTip": "wwwroot\\css\\site.css",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-12-19T11:12:11.365Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "course-selection.css",
-              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\bysproject\\wwwroot\\css\\course-selection.css",
-              "RelativeDocumentMoniker": "wwwroot\\css\\course-selection.css",
-              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\bysproject\\wwwroot\\css\\course-selection.css",
-              "RelativeToolTip": "wwwroot\\css\\course-selection.css",
-              "ViewState": "AgIAABQAAAAAAAAAAAAAACUAAAAxAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-12-19T11:14:49.256Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "StyleSheet.css",
-              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\bysproject\\wwwroot\\css\\StyleSheet.css",
-              "RelativeDocumentMoniker": "wwwroot\\css\\StyleSheet.css",
-              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\bysproject\\wwwroot\\css\\StyleSheet.css",
-              "RelativeToolTip": "wwwroot\\css\\StyleSheet.css",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-12-19T11:13:24.254Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "LoginUser.cshtml",
-              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\bysproject\\Views\\Account\\LoginUser.cshtml",
-              "RelativeDocumentMoniker": "Views\\Account\\LoginUser.cshtml",
-              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\bysproject\\Views\\Account\\LoginUser.cshtml",
-              "RelativeToolTip": "Views\\Account\\LoginUser.cshtml",
-              "ViewState": "AgIAABsAAAAAAAAAAAAAAEAAAAAUAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-19T07:25:05.869Z",
+              "Title": "StudentAndCourse.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\bysproject\\Models\\StudentAndCourse.cs",
+              "RelativeDocumentMoniker": "Models\\StudentAndCourse.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\bysproject\\Models\\StudentAndCourse.cs",
+              "RelativeToolTip": "Models\\StudentAndCourse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-20T07:54:12.904Z",
               "EditorCaption": ""
             }
           ]
