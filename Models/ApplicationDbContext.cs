@@ -13,15 +13,21 @@ namespace Project.Models
         public DbSet<Course> Courses { get; set; }
         public DbSet<StudentCourseSelection> StudentCourseSelections { get; set; }
         public DbSet<Transcript> Transcripts { get; set; }
+
         public DbSet<CourseQuota> CourseQuotas { get; set; }
+        public DbSet<UnapprovedSelections> UnapprovedSelections { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
 
+            modelBuilder.Entity<UnapprovedSelections>()
+           .ToTable("UnapprovedSelections");
+
             modelBuilder.Entity<StudentCourseSelection>(entity =>
             {
-                entity.HasKey(e => e.SelectionID); 
+
+                entity.HasKey(e => e.SelectionID);
                 entity.HasOne(e => e.Student)
                      .WithMany(s => s.StudentCourseSelections)
                      .HasForeignKey(e => e.StudentID);
