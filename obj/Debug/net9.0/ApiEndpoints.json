@@ -542,6 +542,16 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "Project.Controllers.AdminController",
+    "Method": "GetAdminWindow",
+    "RelativePath": "GetAdminWindow",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "Project.Controllers.AccountController",
     "Method": "LoginUser",
     "RelativePath": "LoginUser",

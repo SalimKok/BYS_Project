@@ -3,10 +3,87 @@
 @{
     ViewData["Title"] = "Approve Courses";
 }
+
 <style>
-	.content-container {
-		max-width: 75%;
-	}
+    /* Ana konteyner için genel stil */
+    .container {
+        background-color: #f9f9f9; /* Hafif bir gri arka plan */
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Hafif gölge efekti */
+        color: #333; /* Daha koyu yazı rengi */
+    }
+
+    h2, h4 {
+        color: #0056b3; /* Başlıklar için koyu mavi ton */
+    }
+
+    /* Tablo stilleri */
+    .table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 20px 0;
+        font-size: 16px;
+        text-align: left;
+    }
+
+        .table th, .table td {
+            padding: 12px 15px;
+            border: 1px solid #ddd; /* İnce gri sınırlar */
+        }
+
+        .table th {
+            background-color: #007bff; /* Mavi başlık arka planı */
+            color: white; /* Beyaz başlık yazı rengi */
+            font-weight: bold;
+        }
+
+        .table tbody tr:nth-child(even) {
+            background-color: #f2f2f2; /* Alternatif satırlar için açık gri */
+        }
+
+        .table tbody tr:hover {
+            background-color: #e9ecef; /* Hover (üzerine gelindiğinde) açık ton */
+        }
+
+    /* Düğmeler */
+    .btn-primary {
+        background-color: #007bff; /* Mavi ton */
+        color: white;
+        border: none;
+        padding: 8px 16px;
+        text-align: center;
+        cursor: pointer;
+        border-radius: 5px;
+        text-decoration: none;
+    }
+
+        .btn-primary:hover {
+            background-color: #0056b3; /* Daha koyu mavi ton */
+        }
+
+    /* Uyarı mesajı */
+    .alert {
+        padding: 15px;
+        background-color: #ffc107; /* Açık sarı arka plan */
+        color: #856404; /* Kahverengi yazı */
+        border: 1px solid #ffeeba; /* Açık sarı sınır */
+        border-radius: 5px;
+    }
+
+    /* Geri dön linki */
+    .back-link {
+        display: inline-block;
+        margin-top: 20px;
+        color: #dc3545; /* Kırmızı ton */
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+        .back-link:hover {
+            text-decoration: underline;
+            color: #a71d2a; /* Daha koyu kırmızı */
+        }
 </style>
 
 <div class="container">
@@ -19,7 +96,7 @@
 
     @if (Model.Students == null || !Model.Students.Any())
     {
-        <div class="alert alert-warning">
+        <div class="alert">
             No students are assigned to you.
         </div>
     }
@@ -49,7 +126,7 @@
                         </td>
                     </tr>
                 }
-                
+
             </tbody>
         </table>
 

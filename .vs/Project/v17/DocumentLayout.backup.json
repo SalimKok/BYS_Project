@@ -3,20 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\LENOVO\\source\\repos\\bysproject\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{FBB6BCE6-8A4B-4916-97B2-67CC5824C5AF}|Project.csproj|c:\\users\\lenovo\\source\\repos\\bysproject\\views\\students\\selectcourses.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{FBB6BCE6-8A4B-4916-97B2-67CC5824C5AF}|Project.csproj|solutionrelative:views\\students\\selectcourses.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{FBB6BCE6-8A4B-4916-97B2-67CC5824C5AF}|Project.csproj|c:\\users\\lenovo\\source\\repos\\bysproject\\views\\admin\\adminpanel.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FBB6BCE6-8A4B-4916-97B2-67CC5824C5AF}|Project.csproj|solutionrelative:views\\admin\\adminpanel.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FBB6BCE6-8A4B-4916-97B2-67CC5824C5AF}|Project.csproj|c:\\users\\lenovo\\source\\repos\\bysproject\\controllers\\studentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FBB6BCE6-8A4B-4916-97B2-67CC5824C5AF}|Project.csproj|solutionrelative:controllers\\studentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FBB6BCE6-8A4B-4916-97B2-67CC5824C5AF}|Project.csproj|c:\\users\\lenovo\\source\\repos\\bysproject\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FBB6BCE6-8A4B-4916-97B2-67CC5824C5AF}|Project.csproj|solutionrelative:controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FBB6BCE6-8A4B-4916-97B2-67CC5824C5AF}|Project.csproj|c:\\users\\lenovo\\source\\repos\\bysproject\\models\\studentandcourse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FBB6BCE6-8A4B-4916-97B2-67CC5824C5AF}|Project.csproj|solutionrelative:models\\studentandcourse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FBB6BCE6-8A4B-4916-97B2-67CC5824C5AF}|Project.csproj|c:\\users\\lenovo\\source\\repos\\bysproject\\models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FBB6BCE6-8A4B-4916-97B2-67CC5824C5AF}|Project.csproj|solutionrelative:models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FBB6BCE6-8A4B-4916-97B2-67CC5824C5AF}|Project.csproj|c:\\users\\lenovo\\source\\repos\\bysproject\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FBB6BCE6-8A4B-4916-97B2-67CC5824C5AF}|Project.csproj|solutionrelative:controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -31,53 +27,40 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "SelectCourses.cshtml",
-              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\bysproject\\Views\\Students\\SelectCourses.cshtml",
-              "RelativeDocumentMoniker": "Views\\Students\\SelectCourses.cshtml",
-              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\bysproject\\Views\\Students\\SelectCourses.cshtml",
-              "RelativeToolTip": "Views\\Students\\SelectCourses.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAjAAAAAAAAAA==",
+              "Title": "AdminPanel.cshtml",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\bysproject\\Views\\Admin\\AdminPanel.cshtml",
+              "RelativeDocumentMoniker": "Views\\Admin\\AdminPanel.cshtml",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\bysproject\\Views\\Admin\\AdminPanel.cshtml",
+              "RelativeToolTip": "Views\\Admin\\AdminPanel.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAP8AAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-21T16:32:18.668Z",
+              "WhenOpened": "2024-12-21T20:27:54.035Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "StudentAndCourse.cs",
-              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\bysproject\\Models\\StudentAndCourse.cs",
-              "RelativeDocumentMoniker": "Models\\StudentAndCourse.cs",
-              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\bysproject\\Models\\StudentAndCourse.cs",
-              "RelativeToolTip": "Models\\StudentAndCourse.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\bysproject\\Controllers\\AdminController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AdminController.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\bysproject\\Controllers\\AdminController.cs",
+              "RelativeToolTip": "Controllers\\AdminController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-21T16:30:37.097Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Student.cs",
-              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\bysproject\\Models\\Student.cs",
-              "RelativeDocumentMoniker": "Models\\Student.cs",
-              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\bysproject\\Models\\Student.cs",
-              "RelativeToolTip": "Models\\Student.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-21T16:29:56.484Z",
+              "WhenOpened": "2024-12-21T20:24:30.947Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "StudentsController.cs",
-              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\bysproject\\Controllers\\StudentsController.cs",
-              "RelativeDocumentMoniker": "Controllers\\StudentsController.cs",
-              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\bysproject\\Controllers\\StudentsController.cs",
-              "RelativeToolTip": "Controllers\\StudentsController.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAgwC8AAAAAAAAAAAAAAA==",
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\bysproject\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\bysproject\\Controllers\\AccountController.cs*",
+              "RelativeToolTip": "Controllers\\AccountController.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-21T16:26:08.873Z",
+              "WhenOpened": "2024-12-21T20:23:03.416Z",
               "EditorCaption": ""
             }
           ]
