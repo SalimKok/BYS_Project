@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Project.Models;
+using System;
 
 namespace Project.Controllers
 {
@@ -16,37 +17,88 @@ namespace Project.Controllers
         }
 
         [HttpGet("SelectCourses")]
-        public async Task<IActionResult> SelectCourses(int id)
+        public async Task<IActionResult> SelectCourses([FromQuery] int StudentId)
         {
-            // Tüm dersleri getiriyoruz
-            var course = _context.Courses.ToList();
-            var student = _context.Students
+            if (StudentId == 0)
+            {
+                return BadRequest("Invalid student ID.");
+            }
+
+            var course = await _context.Courses.ToListAsync();
+            var student = await _context.Students
                                        .Include(s => s.StudentCourseSelections)
                                            .ThenInclude(sc => sc.Course)
                                        .Include(s => s.Advisor)
-                                       .FirstOrDefaultAsync(s => s.StudentID == id);
-            var sc = new StudentAndCourse { Course = course, StudentIDI = id };
+                                       .FirstOrDefaultAsync(s => s.StudentID == StudentId);
+
+            if (student == null)
+            {
+                return NotFound($"Student with ID {StudentId} not found.");
+            }
+
+            var sc = new StudentAndCourse
+            {
+                Course = course,
+                Student = student
+            };
 
             return View(sc);
         }
+
+
         [HttpPost("SubmitSelectedCourses")]
         public async Task<IActionResult> SubmitSelectedCourses([FromBody] SubmitCoursesRequest request)
         {
-
-
             if (request == null || request.SelectedCourseIds == null || !request.SelectedCourseIds.Any())
             {
                 return BadRequest("No courses selected.");
             }
-            // İstekteki veriyi işleyin
-            foreach (var courseId in request.SelectedCourseIds)
-            {
-                // Örnek: Veritabanına kayıt işlemi
-                Console.WriteLine($"Student {request.StudentId} selected course {courseId}");
-            }
 
-            return Ok(new { Message = "Courses submitted successfully!" });
+            try
+            {
+                // Öğrenciye ait mevcut kayıtları kontrol et ve sil
+                var existingRecords = _context.UnapprovedSelections
+                    .Where(x => x.StudentID == request.StudentId)
+                    .ToList();
+
+                if (existingRecords.Any())
+                {
+                    _context.UnapprovedSelections.RemoveRange(existingRecords);
+                }
+
+                // Yeni kayıtları ekle
+                int maxId = _context.UnapprovedSelections.Any()
+                    ? _context.UnapprovedSelections.Max(x => x.ID)
+                    : 0;
+
+                foreach (var courseId in request.SelectedCourseIds)
+                {
+                    maxId++; // Yeni ID'yi belirle
+
+                    var unapprovedSelection = new UnapprovedSelections
+                    {
+                        ID = maxId,
+                        StudentID = request.StudentId,
+                        CourseID = courseId
+                    };
+
+                    _context.UnapprovedSelections.Add(unapprovedSelection);
+                }
+
+                // Değişiklikleri kaydet
+                await _context.SaveChangesAsync();
+
+                return Ok(new { Message = "Courses updated successfully!" });
+            }
+            catch (Exception ex)
+            {
+                // Hata durumunda geri bildirim ver
+                return StatusCode(500, new { Message = "An error occurred while updating courses.", Details = ex.Message });
+            }
         }
+
+
+
 
         [HttpGet("CourseSelection")]
         public async Task<IActionResult> CourseSelection(int id)

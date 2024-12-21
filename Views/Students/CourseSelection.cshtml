@@ -8,7 +8,7 @@
 
 <style>
     .content-container {
-        background-color: lightslategrey;
+        background-color:lightslategrey;
         padding: 20px;
         border-radius: 10px;
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -70,7 +70,7 @@
         <p><strong>Email:</strong> @Model.Email</p>
         <p><strong>Enrollment Date:</strong> @Model.EnrollmentDate.ToString("d")</p>
         <hr />
-
+        
         @if (Model.Advisor != null)
         {
             <h4>Advisor Information</h4>
@@ -85,7 +85,8 @@
             <hr />
         }
     </div>
-    <a href="@Url.Action("SelectCourses", "Students")" class="back-link">Select Courses</a>
+    <button onclick="redirectToSelectCourses()">Select Courses</button>>
+   
     @if (Model.StudentCourseSelections == null || !Model.StudentCourseSelections.Any())
     {
         <div class="alert alert-warning">
@@ -125,4 +126,19 @@
             </form>
         </div>
     }<a href="https://localhost:7199/Account/LoginUser" style="color:darkred" class="back-link">Logout</a>
+    
+
+
 </div>
+<script>
+       function redirectToSelectCourses() {
+        // @Model.StudentID'yi doğru şekilde yerleştiriyoruz
+        const studentId = '@Model.StudentID'; // Razor ifadesi burada çalışır
+
+        // URL'yi oluşturuyoruz
+        const url = `/api/StudentController/SelectCourses?StudentId=${encodeURIComponent(studentId)}`;
+
+        // Yönlendirme işlemi
+        window.location.href = url;
+    }
+</script>

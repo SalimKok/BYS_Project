@@ -1,5 +1,11 @@
-﻿﻿
-﻿<div class="table-container">
+﻿@model Project.Models.StudentAndCourse
+
+<div class="table-container">
+    <!-- Öğrenci bilgisini saklayan gizli alan -->
+    <div id="studentInfo" data-student-id="@Model.Student.StudentID"></div>
+
+
+
     <form id="form" method="post" asp-action="SubmitSelectedCourses" asp-controller="Students">
         <table class="table table-bordered">
             <thead>
@@ -10,20 +16,20 @@
                     <th>Action</th>
                 </tr>
             </thead>
-
             <tbody>
-
                 @foreach (var selection in Model.Course)
                 {
-                    <div id="studentInfo" data-student-id="@Model.StudentIDI"></div>
-                    <tr>
-                        <td>@selection.CourseName</td>
-                        <td>@(selection.IsMandatory ? "Mandatory" : "-")</td>
-                        <td>@selection.Credit</td>
-                        <td>
-                            <input type="checkbox" name="SelectedCourseIds" value="@selection.CourseID" />
-                        </td>
-                    </tr>
+                    @if (!@selection.IsMandatory)
+                    {
+                        <tr>
+                            <td>@selection.CourseName</td>
+                            <td>@(selection.IsMandatory ? "Mandatory" : "-")</td>
+                            <td>@selection.Credit</td>
+                            <td>
+                                <input type="checkbox" name="SelectedCourseIds" value="@selection.CourseID" />
+                            </td>
+                        </tr>
+                    }
                 }
             </tbody>
         </table>
@@ -36,19 +42,26 @@
 <div id="cardContainer"></div>
 
 <script>
+    // Formu gönderme işleminde kontrol
     document.getElementById("form").addEventListener("submit", function (event) {
         event.preventDefault(); // Varsayılan form gönderimini engelle
 
         // Seçilen derslerin ID'lerini al
         const selectedCourseIds = Array.from(document.querySelectorAll("input[name='SelectedCourseIds']:checked"))
             .map(checkbox => checkbox.value);
-            const StudentId = document.getElementById("studentInfo").dataset.studentId;
 
-
+        // Öğrenci ID'sini al
+        const studentId = document.getElementById("studentInfo").dataset.studentId;
 
         // Eğer hiçbir ders seçilmemişse bildirim göster ve işlemi durdur
         if (selectedCourseIds.length === 0) {
             showNotification("No courses selected.", "error");
+            return;
+        }
+
+        // Eğer 3'ten az ders seçilmişse bildirim göster ve işlemi durdur
+        if (selectedCourseIds.length < 3) {
+            showNotification("You must select at least 3 courses.", "error");
             return;
         }
 
@@ -58,7 +71,7 @@
             headers: {
                 "Content-Type": "application/json"
             },
-            body: JSON.stringify({StudentId:StudentId, SelectedCourseIds: selectedCourseIds })
+            body: JSON.stringify({ StudentId: studentId, SelectedCourseIds: selectedCourseIds })
         })
         .then(response => {
             if (response.ok) {
@@ -76,6 +89,21 @@
         });
     });
 
+    // Checkbox değişikliklerini dinleyerek kontrol mekanizması
+    document.querySelectorAll("input[name='SelectedCourseIds']").forEach(checkbox => {
+        checkbox.addEventListener("change", function () {
+            // Seçili checkbox'ların sayısını kontrol et
+            const selectedCount = document.querySelectorAll("input[name='SelectedCourseIds']:checked").length;
+
+            // Eğer seçili checkbox sayısı üçü aşıyorsa, değişikliği engelle ve kullanıcıyı bilgilendir
+            if (selectedCount > 3) {
+                this.checked = false; // Kullanıcının seçimini geri al
+                showNotification("You can select a maximum of 3 courses.", "error");
+            }
+        });
+    });
+
+    // Bildirim gösterme fonksiyonu
     function showNotification(message, type) {
         // Daha önce oluşturulan bildirimi sil
         const existingNotification = document.querySelector(".notification");
@@ -105,7 +133,6 @@
         closeButton.style.cursor = "pointer";
         closeButton.style.borderRadius = "50%";
 
-        // Kapatma butonuna tıklama olayını ekle
         closeButton.addEventListener("click", function () {
             notification.remove();
         });
@@ -127,5 +154,13 @@
         notification.style.zIndex = "1000";
 
         cardContainer.appendChild(notification);
+
+        // Mesajı 3 saniye sonra kaldır
+        setTimeout(() => {
+            notification.remove();
+        }, 3000);
     }
 </script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>

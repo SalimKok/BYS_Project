@@ -465,7 +465,7 @@
         ],
         "parameters": [
           {
-            "name": "id",
+            "name": "StudentId",
             "in": "query",
             "schema": {
               "type": "integer",
