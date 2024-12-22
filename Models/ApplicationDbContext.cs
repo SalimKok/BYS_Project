@@ -1,6 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Project.Models;
 
+
 namespace Project.Models
 {
     public class ApplicationDbContext : DbContext
@@ -13,7 +14,6 @@ namespace Project.Models
         public DbSet<Course> Courses { get; set; }
         public DbSet<StudentCourseSelection> StudentCourseSelections { get; set; }
         public DbSet<Transcript> Transcripts { get; set; }
-
         public DbSet<CourseQuota> CourseQuotas { get; set; }
         public DbSet<UnapprovedSelections> UnapprovedSelections { get; set; }
 

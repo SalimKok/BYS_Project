@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using Project.Models;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Project.Models
 {
@@ -10,11 +11,14 @@ namespace Project.Models
         public string Email { get; set; }
         public int? AdvisorID { get; set; }
         public DateTime EnrollmentDate { get; set; }
-        public string Department { get; set; } 
+        public string Department { get; set; }
 
-  
-        public Advisor Advisor { get; set; } 
 
+        public Advisor Advisor { get; set; }
+
+        [InverseProperty("Student")]
         public ICollection<StudentCourseSelection> StudentCourseSelections { get; set; } = new List<StudentCourseSelection>();
+        [InverseProperty("Student")]
+        public ICollection<UnapprovedSelections> UnapprovedSelections { get; set; } = new List<UnapprovedSelections>();
     }
 }

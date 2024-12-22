@@ -54,6 +54,32 @@
   },
   {
     "ContainingType": "Project.Controllers.AdvisorsController",
+    "Method": "ApproveStudentsCourses",
+    "RelativePath": "api/AdvisorController/ApproveStudentsCourses",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "SelectedCourseIds",
+        "Type": "System.Collections.Generic.List\u00601[[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "UncheckedCourseIds",
+        "Type": "System.Collections.Generic.List\u00601[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Project.Controllers.AdvisorsController",
     "Method": "CreateAdvisor",
     "RelativePath": "api/AdvisorController/CreateAdvisor",
     "HttpMethod": "POST",

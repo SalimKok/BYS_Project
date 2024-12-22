@@ -4,8 +4,6 @@
     <!-- Öğrenci bilgisini saklayan gizli alan -->
     <div id="studentInfo" data-student-id="@Model.Student.StudentID"></div>
 
-
-
     <form id="form" method="post" asp-action="SubmitSelectedCourses" asp-controller="Students">
         <table class="table table-bordered">
             <thead>
@@ -19,11 +17,11 @@
             <tbody>
                 @foreach (var selection in Model.Course)
                 {
-                    @if (!@selection.IsMandatory)
+                    @if (!@selection.IsMandatory && selection.Quota>0)
                     {
                         <tr>
                             <td>@selection.CourseName</td>
-                            <td>@(selection.IsMandatory ? "Mandatory" : "-")</td>
+                            <td>@(selection.IsMandatory ? "Mandatory" : "Elective")</td>
                             <td>@selection.Credit</td>
                             <td>
                                 <input type="checkbox" name="SelectedCourseIds" value="@selection.CourseID" />
@@ -38,6 +36,7 @@
         </div>
     </form>
 </div>
+<button onclick="window.location.href='@Url.Action("CourseSelection", "Students", new { id = Model.Student.StudentID })'" class="back-link">Back</button>
 
 <div id="cardContainer"></div>
 

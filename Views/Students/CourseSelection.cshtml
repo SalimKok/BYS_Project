@@ -7,20 +7,17 @@
 <link href="~/css/course-selection.css" rel="stylesheet" />
 
 <style>
-    /* Genel Konteyner */
-    .student-info, .table-container {
-        background-color: #f9f9f9; /* Hafif gri arka plan */
+    .content-container {
+        background-color:lightslategrey;
         padding: 20px;
         border-radius: 10px;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Hafif gölge efekti */
-        margin-bottom: 20px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     }
 
-    h2, h4 {
-        color: #0056b3; /* Başlıklar için koyu mavi */
+    .table-container {
+        margin-top: 20px;
     }
 
-    /* Tablo Stilleri */
     table {
         width: 100%;
         border-collapse: collapse;
@@ -31,26 +28,25 @@
 
         table th, table td {
             padding: 12px 15px;
-            border: 1px solid #ddd; /* İnce gri sınırlar */
+            border: 1px solid #ddd;
         }
 
         table th {
-            background-color: yellowgreen; /* Sarı-yeşil arka plan */
-            color: white; /* Beyaz yazı rengi */
+            background-color: yellowgreen;
+            color: #333;
             font-weight: bold;
         }
 
         table tbody tr:nth-child(even) {
-            background-color: #f2f2f2; /* Alternatif satırlar için açık gri */
+            background-color: #f9f9f9;
         }
 
         table tbody tr:hover {
-            background-color: #e9ecef; /* Hover (üzerine gelindiğinde) açık ton */
+            background-color: #f1f1f1;
         }
 
-    /* Düğme Stilleri */
     .btn-primary {
-        background-color: #007bff; /* Mavi */
+        background-color: #007bff;
         color: white;
         border: none;
         padding: 10px 20px;
@@ -60,79 +56,60 @@
     }
 
         .btn-primary:hover {
-            background-color: yellowgreen; /* Hover için sarı-yeşil ton */
-        }
-
-    /* Uyarı Mesajı */
-    .text-danger {
-        color: #dc3545; /* Kırmızı yazı */
-    }
-
-    /* Geri Dön Linki */
-    .back-link {
-        display: inline-block;
-        margin-top: 20px;
-        color: #dc3545; /* Kırmızı ton */
-        text-decoration: none;
-        font-weight: bold;
-    }
-
-        .back-link:hover {
-            text-decoration: underline;
-            color: #a71d2a; /* Daha koyu kırmızı */
-        }
-
-    .logout-btn {
-        position: fixed; /* Ekranda sabit kalması için */
-        bottom: 20px; /* Alt kenardan uzaklık */
-        right: 20px; /* Sağ kenardan uzaklık */
-        background-color: #dc3545; /* Kırmızı arka plan */
-        color: white; /* Beyaz yazı */
-        padding: 10px 20px;
-        text-decoration: none;
-        font-weight: bold;
-        border-radius: 5px;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Hafif gölge efekti */
-        transition: background-color 0.3s ease; /* Hover geçiş efekti */
-    }
-
-        .logout-btn:hover {
-            background-color: #a71d2a; /* Hover durumunda daha koyu kırmızı */
+            background-color: yellowgreen;
         }
 </style>
 
-<div class="student-info">
-    <h2>Course Selection</h2>
-    <h4>Student Information</h4>
-    <p><strong>Name:</strong> @Model.FirstName @Model.LastName</p>
-    <p><strong>Student ID:</strong> @Model.StudentID</p>
-    <p><strong>Department:</strong> @Model.Department</p>
-    <p><strong>Email:</strong> @Model.Email</p>
-    <p><strong>Enrollment Date:</strong> @Model.EnrollmentDate.ToString("d")</p>
-    <hr />
+<div class="container content-container">
+    <a href="https://localhost:7199/Account/LoginUser" style="color:darkred" class="back-link">Logout</a>
+    <div class="student-info">
+        <h2>Course Selection</h2>
+        <h4>Student Information</h4>
+        <p><strong>Name:</strong> @Model.FirstName @Model.LastName</p>
+        <p><strong>Student ID:</strong> @Model.StudentID</p>
+        <p><strong>Department:</strong> @Model.Department</p>
+        <p><strong>Email:</strong> @Model.Email</p>
+        <p><strong>Enrollment Date:</strong> @Model.EnrollmentDate.ToString("d")</p>
+        <hr />
+        
+        @if (Model.Advisor != null)
+        {
+            <h4>Advisor Information</h4>
+            <p><strong>Name:</strong> @Model.Advisor.FullName</p>
+            <p><strong>Department:</strong> @Model.Advisor.Department</p>
+            <p><strong>Email:</strong> @Model.Advisor.Email</p>
+            <hr />
+        }
+        else
+        {
+            <p class="text-danger">Advisor information not available.</p>
+            <hr />
+        }
+    </div>
 
-    @if (Model.Advisor != null)
-    {
-        <h4>Advisor Information</h4>
-        <p><strong>Name:</strong> @Model.Advisor.FullName</p>
-        <p><strong>Department:</strong> @Model.Advisor.Department</p>
-        <p><strong>Email:</strong> @Model.Advisor.Email</p>
-        <hr />
-    }
-    else
-    {
-        <p class="text-danger">Advisor information not available.</p>
-        <hr />
-    }
+    <button onclick="redirectToSelectCourses()">Select Courses</button>>
+   
+   
+    
+
+
 </div>
+<script>
+       function redirectToSelectCourses() {
+        // @Model.StudentID'yi doğru şekilde yerleştiriyoruz
+        const studentId = '@Model.StudentID'; // Razor ifadesi burada çalışır
 
-<button class="btn btn-primary" onclick="redirectToSelectCourses()">Select Courses</button>
+        // URL'yi oluşturuyoruz
+        const url = `/api/StudentController/SelectCourses?StudentId=${encodeURIComponent(studentId)}`;
 
-@if (Model.StudentCourseSelections == null || !Model.StudentCourseSelections.Any())
+        // Yönlendirme işlemi
+        window.location.href = url;
+    }
+</script> @if (Model.StudentCourseSelections == null || !Model.StudentCourseSelections.Any())
 {
-    /*<div class="alert alert-warning">
-        There are no selected courses.
-    </div>*/
+    <div class="alert alert-warning">
+        There is no any approved courses.
+    </div>
 }
 else
 {
@@ -144,7 +121,7 @@ else
                         <th>Course Name</th>
                         <th>Mandatory</th>
                         <th>Credit</th>
-                        <th>Action</th>
+                        <th>IsApproved</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -154,26 +131,11 @@ else
                             <td>@selection.Course.CourseName</td>
                             <td>@(selection.Course.IsMandatory ? "Mandatory" : "Elective")</td>
                             <td>@selection.Course.Credit</td>
-                            <td>
-                                <input type="checkbox" name="SelectedCourseIds" value="@selection.CourseID" />
-                            </td>
+                            <td>@(selection.IsApproved ? "Approved" : "-")</td>
                         </tr>
                     }
                 </tbody>
             </table>
-            <div class="form-group">
-                <input type="submit" value="Submit Selection" class="btn btn-primary" />
-            </div>
         </form>
     </div>
 }
-
-<a href="https://localhost:7199/Account/LoginUser" class="back-link">Logout</a>
-
-<script>
-    function redirectToSelectCourses() {
-        const studentId = '@Model.StudentID';
-        const url = `/api/StudentController/SelectCourses?StudentId=${encodeURIComponent(studentId)}`;
-        window.location.href = url;
-    }
-</script>
