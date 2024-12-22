@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace Project.Migrations
 {
     /// <inheritdoc />
-    public partial class SqlMigration : Migration
+    public partial class epSqlMg : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -43,20 +43,6 @@ namespace Project.Migrations
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Courses", x => x.CourseID);
-                });
-
-            migrationBuilder.CreateTable(
-                name: "UnapprovedSelections",
-                columns: table => new
-                {
-                    ID = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    CourseID = table.Column<int>(type: "int", nullable: false),
-                    StudentID = table.Column<int>(type: "int", nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_UnapprovedSelections", x => x.ID);
                 });
 
             migrationBuilder.CreateTable(
@@ -175,6 +161,32 @@ namespace Project.Migrations
                         onDelete: ReferentialAction.Cascade);
                 });
 
+            migrationBuilder.CreateTable(
+                name: "UnapprovedSelections",
+                columns: table => new
+                {
+                    ID = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    CourseID = table.Column<int>(type: "int", nullable: false),
+                    StudentID = table.Column<int>(type: "int", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_UnapprovedSelections", x => x.ID);
+                    table.ForeignKey(
+                        name: "FK_UnapprovedSelections_Courses_CourseID",
+                        column: x => x.CourseID,
+                        principalTable: "Courses",
+                        principalColumn: "CourseID",
+                        onDelete: ReferentialAction.Cascade);
+                    table.ForeignKey(
+                        name: "FK_UnapprovedSelections_Students_StudentID",
+                        column: x => x.StudentID,
+                        principalTable: "Students",
+                        principalColumn: "StudentID",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
             migrationBuilder.CreateIndex(
                 name: "IX_StudentCourseSelections_CourseID",
                 table: "StudentCourseSelections",
@@ -198,6 +210,16 @@ namespace Project.Migrations
             migrationBuilder.CreateIndex(
                 name: "IX_Transcripts_StudentID",
                 table: "Transcripts",
+                column: "StudentID");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_UnapprovedSelections_CourseID",
+                table: "UnapprovedSelections",
+                column: "CourseID");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_UnapprovedSelections_StudentID",
+                table: "UnapprovedSelections",
                 column: "StudentID");
         }
 

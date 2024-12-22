@@ -5,13 +5,105 @@
 }
 
 <style>
-    .content-container {
-        max-width: 75%;
+    body {
+        font-family: 'Arial', sans-serif;
+        background-color: #f7f9fc;
+        color: #333;
     }
 
+    .container {
+        max-width: 900px;
+        margin: 30px auto;
+        padding: 20px;
+        background-color: #ffffff;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+    }
+
+    h2, h4 {
+        color: #2c3e50;
+    }
+
+    p {
+        font-size: 16px;
+        color: #444;
+    }
+
+    strong {
+        color: #2c3e50;
+    }
+
+    .alert {
+        background-color: #fdebd0;
+        color: #a94442;
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid #ebccd1;
+        margin-bottom: 20px;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+    }
+
+    th {
+        background-color: #3498db;
+        color: white;
+        padding: 12px;
+        text-align: left;
+    }
+
+    td {
+        padding: 10px;
+        border: 1px solid #ddd;
+    }
+
+    tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+
+    tr:hover {
+        background-color: #e0f7fa;
+    }
+
+    .form-group {
+        margin-top: 20px;
+        text-align: right;
+    }
+
+    .btn {
+        background-color: #3498db;
+        color: white;
+        padding: 10px 15px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+        .btn:hover {
+            background-color: #2980b9;
+        }
+
+    .back-link {
+        display: inline-block;
+        margin-top: 20px;
+        color: #c0392b;
+        text-decoration: none;
+        font-size: 14px;
+        transition: color 0.3s;
+    }
+
+        .back-link:hover {
+            color: #a32121;
+        }
+
     .success-message {
-        color: green;
+        color: #27ae60;
         font-weight: bold;
+        text-align: center;
         margin-top: 20px;
     }
 
@@ -31,7 +123,7 @@
 
     @if (Model.StudentCourseSelections == null || !Model.StudentCourseSelections.Any())
     {
-        <div class="alert alert-warning">
+        <div class="alert">
             No courses have been selected by this student.
         </div>
     }
@@ -39,10 +131,9 @@
     {
         <h4>Selected Courses</h4>
 
-        <!-- Form ile checkbox seçimini gönder -->
         <form asp-action="ApproveStudentsCourses" asp-controller="Advisors" method="post" id="approveForm">
             <input type="hidden" name="id" value="@Model.AdvisorID" />
-            <table class="table table-bordered">
+            <table>
                 <thead>
                     <tr>
                         <th>Course Name</th>
@@ -61,31 +152,24 @@
                             <td>@(courseSelection.Course.IsMandatory ? "Yes" : "No")</td>
                             <td>@courseSelection.SelectionDate.ToString("d")</td>
                             <td>
-                                @if (courseSelection.IsApproved)
-                                {
-                                    <input type="checkbox" name="SelectedCourseIds" value="@courseSelection.CourseID" checked />
-                                }
-                                else
-                                {
-                                    <input type="checkbox" name="SelectedCourseIds" value="@courseSelection.CourseID" />
-                                }
+                                <input type="checkbox" name="SelectedCourseIds" value="@courseSelection.CourseID" @(courseSelection.IsApproved ? "checked" : "") />
                             </td>
                         </tr>
                     }
                 </tbody>
             </table>
             <div class="form-group">
-                <button type="submit" id="submitBtn" class="btn btn-primary">Approve</button>
+                <button type="submit" id="submitBtn" class="btn">Approve</button>
             </div>
         </form>
-        <button onclick="window.location.href='@Url.Action("ApproveCourses", "Advisors", new { id = Model.AdvisorID })'" class="back-link">Back</button>
+        <a href="@Url.Action("ApproveCourses", "Advisors", new { id = Model.AdvisorID })" class="back-link">Back</a>
 
-        <!-- Success Message -->
         <div id="successMessage" class="success-message hidden">
             Courses approved successfully!
         </div>
     }
 </div>
+
 
 <script>
    

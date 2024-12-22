@@ -7,13 +7,14 @@ using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Project.Models;
 
+
 #nullable disable
 
 namespace Project.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20241221083005_SqlMigration")]
-    partial class SqlMigration
+    [Migration("20241222181330_epSqlMg")]
+    partial class epSqlMg
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -249,6 +250,10 @@ namespace Project.Migrations
 
                 b.HasKey("ID");
 
+                b.HasIndex("CourseID");
+
+                b.HasIndex("StudentID");
+
                 b.ToTable("UnapprovedSelections", (string)null);
             });
 
@@ -311,6 +316,25 @@ namespace Project.Migrations
                 b.Navigation("Course");
             });
 
+            modelBuilder.Entity("StudentIMS.Models.UnapprovedSelections", b =>
+            {
+                b.HasOne("SmartCourseSelectorWeb.Models.Course", "Course")
+                    .WithMany("UnapprovedSelections")
+                    .HasForeignKey("CourseID")
+                    .OnDelete(DeleteBehavior.Cascade)
+                    .IsRequired();
+
+                b.HasOne("SmartCourseSelectorWeb.Models.Student", "Student")
+                    .WithMany("UnapprovedSelections")
+                    .HasForeignKey("StudentID")
+                    .OnDelete(DeleteBehavior.Cascade)
+                    .IsRequired();
+
+                b.Navigation("Course");
+
+                b.Navigation("Student");
+            });
+
             modelBuilder.Entity("SmartCourseSelectorWeb.Models.Advisor", b =>
             {
                 b.Navigation("Students");
@@ -319,11 +343,15 @@ namespace Project.Migrations
             modelBuilder.Entity("SmartCourseSelectorWeb.Models.Course", b =>
             {
                 b.Navigation("StudentCourseSelections");
+
+                b.Navigation("UnapprovedSelections");
             });
 
             modelBuilder.Entity("SmartCourseSelectorWeb.Models.Student", b =>
             {
                 b.Navigation("StudentCourseSelections");
+
+                b.Navigation("UnapprovedSelections");
             });
 #pragma warning restore 612, 618
         }

@@ -1,4 +1,5 @@
-﻿<!DOCTYPE html>
+﻿﻿
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -8,7 +9,8 @@
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <style>
         body {
-            background-color: #f3f4f6;
+            background-color: #f7f9fc; /* Daha yumuşak arka plan */
+            font-family: 'Arial', sans-serif;
             display: flex;
             flex-direction: column;
             min-height: 100vh;
@@ -16,19 +18,20 @@
         }
 
         .content-container {
-            max-width: 100%;
-            width: 50%;
-            background-color:lightslategrey;
+            max-width: 900px;
+            background-color: #ffffff; /* Konteyneri belirginleştirme */
             padding: 30px;
-            border-radius: 20px;
-            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-            margin: auto; /* Center the content */
+            border-radius: 10px;
+            box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
+            margin: 40px auto; /* Ortalanmış görünüm */
         }
 
         footer {
-            margin-top: auto; /* Push the footer to the bottom */
-            padding: 10px 0;
+            background-color: #2c3e50; /* Daha koyu ve net bir görünüm */
+            color: white;
             text-align: center;
+            padding: 15px 0;
+            margin-top: auto;
             width: 100%;
             position: relative;
         }
@@ -39,20 +42,29 @@
                 top: 0;
                 left: 0;
                 width: 100%;
-                height: 4px; /* Border height */
-                background-color: #ddd; /* Border color */
+                height: 4px; /* Çizgi yüksekliği */
+                background-color: #3498db; /* Çizgi rengi */
             }
+
+        h1, h2, h3, h4, h5 {
+            color: #2c3e50; /* Başlıklar için koyu mavi renk */
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #333;
+        }
     </style>
 </head>
 <body>
     <div class="content-container">
         @RenderBody()
-
     </div>
 
     <footer>
         <div class="container">
-            &copy; @DateTime.Now.Year - IMS
+            &copy; @DateTime.Now.Year - IMS | All Rights Reserved.
         </div>
     </footer>
 
