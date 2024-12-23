@@ -1,13 +1,4 @@
-﻿﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
-}
-@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
-}
+﻿﻿﻿
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -98,20 +89,7 @@
         </div>
 
         <script>
-            document.getElementById('submitStudent').addEventListener('click', async () => {
-                // Form alanlarını oku
-                const studentFirstName = document.getElementById('studentFirstName').value;
-                const studentLastName = document.getElementById('studentLastName').value;
-                const studentEmail = document.getElementById('studentEmail').value;
-                const advisorID = document.getElementById('advisorID').value || null;
-                const department = document.getElementById('department').value || "Software Engineering";
-                const enrollmentDate = new Date().toISOString();
-
-                // Verileri bir nesneye dönüştür
-                const studentData = {
-                    firstName: studentFirstName,
-                    lastName: studentLastName,
-                    email: studentEmail,
+                         email: studentEmail,
                     advisorID: advisorID,
                     enrollmentDate: enrollmentDate,
                     department: department
@@ -128,7 +106,8 @@
                     });
 
                     if (response.ok) {
-                        alert('Student added successfully!');
+                        const data = await response.json();
+                        alert('Student added successfully! ID: ' + data.studentID);  // ID'yi ekrana yazdır
                         document.getElementById('addStudentForm').reset(); // Formu temizle
                     } else {
                         const errorData = await response.json();
@@ -157,19 +136,20 @@
             document.getElementById('removeStudentButton').addEventListener('click', async () => {
                 const studentID = document.getElementById('studentID').value;
 
-                if (!studentID) {
+                // Validation: Geçerli bir ID kontrolü
+                if (!studentID || isNaN(studentID) || parseInt(studentID) <= 0) {
                     alert('Please enter a valid Student ID.');
                     return;
                 }
 
-                const confirmation = confirm(Are you sure you want to delete the Student with ID ${studentID}?);
+                const confirmation = confirm(`Are you sure you want to delete the Student with ID ${studentID}?`);
                 if (!confirmation) {
                     return;
                 }
 
                 try {
                     // API'ye DELETE isteği gönder
-                    const response = await fetch(/api/Students/${studentID}, {
+                    const response = await fetch(`/api/StudentController/${studentID}`, {
                         method: 'DELETE'
                     });
 
@@ -178,7 +158,7 @@
                         document.getElementById('removeStudentForm').reset(); // Formu temizle
                     } else {
                         const errorData = await response.json();
-                        alert('Failed to remove student: ' + (errorData.message || "Unexpected error"));
+                        alert('Failed to remove student: ' + (errorData.message || 'Unexpected error'));
                     }
                 } catch (error) {
                     console.error('Error:', error);
@@ -198,78 +178,67 @@
             </form>
         </div>
 
-        <!-- List Courses Panel -->
+
+        <!-- List Course Panel -->
         <div id="listCoursePanel" class="panel" style="display:none;">
             <h4>List Courses</h4>
-            <div>
-                <button type="button" class="btn btn-primary" id="listCoursesButton">List Courses</button>
+            <div id="courseList">
+                <!-- Advisor list will be dynamically loaded here -->
             </div>
-            <div id="courseListContainer" style="margin-top: 20px;">
-                <!-- Kurs listesi burada görüntülenecek -->
-            </div>
+            <button class="btn btn-primary" id="loadCourseListButton">Load Courses</button>
         </div>
 
         <script>
-            document.getElementById('listCoursesButton').addEventListener('click', async () => {
-                const courseListContainer = document.getElementById('courseListContainer');
-                courseListContainer.innerHTML = '<p>Loading...</p>'; // Yüklenme bilgisi
+            document.getElementById('loadCourseListButton').addEventListener('click', async () => {
+                const courseListDiv = document.getElementById('courseList');
+                courseListDiv.innerHTML = '<p>Loading...</p>'; // Loading mesajı
 
                 try {
-                    // API'ye GET isteği gönder
-                    const response = await fetch('/api/Courses');
-
+                    // API'den GET isteği gönder
+                    const response = await fetch('/api/CourseController/GetCourses');
                     if (response.ok) {
                         const courses = await response.json();
 
+                        // Eğer liste boşsa bilgilendirme mesajı
                         if (courses.length === 0) {
-                            courseListContainer.innerHTML = '<p>No courses found.</p>';
+                            courseListDiv.innerHTML = '<p>No courses found.</p>';
                             return;
                         }
 
-                        // Kurs listesini tablo halinde göster
-                        const table = document.createElement('table');
-                        table.className = 'table table-bordered';
-
-                        // Tablo başlıkları
-                        table.innerHTML = `
+                        // Danışman listesini oluştur
+                        const courseTable = document.createElement('table');
+                        courseTable.className = 'table table-striped';
+                        courseTable.innerHTML = `
                             <thead>
                                 <tr>
-                                    <th>ID</th>
-                                    <th>Code</th>
-                                    <th>Name</th>
-                                    <th>Mandatory</th>
-                                    <th>Credit</th>
+                                    <th>CourseID</th>
+                                    <th>CourseName</th>
+                                    <th>courseCode</th>
                                     <th>Department</th>
-                                    <th>Quota</th>
+                                    <th>Credit</th>
                                 </tr>
                             </thead>
                             <tbody>
-                                ${courses
-                                    .map(
-                                        (course) => `
-                                        <tr>
-                                            <td>${course.CourseID}</td>
-                                            <td>${course.CourseCode}</td>
-                                            <td>${course.CourseName}</td>
-                                            <td>${course.IsMandatory ? "Yes" : "No"}</td>
-                                            <td>${course.Credit}</td>
-                                            <td>${course.Department}</td>
-                                            <td>${course.Quota || "N/A"}</td>
-                                        </tr>
-                                    `
-                                    )
-                                    .join('')}
+                                ${courses.map(course => `
+                                    <tr>
+                                        <td>${course.advisorID}</td>
+                                        <td>${advisor.fullName}</td>
+                                        <td>${advisor.title}</td>
+                                        <td>${advisor.department}</td>
+                                        <td>${advisor.email}</td>
+                                    </tr>
+                                `).join('')}
                             </tbody>
                         `;
-                        courseListContainer.innerHTML = '';
-                        courseListContainer.appendChild(table);
+
+                        advisorListDiv.innerHTML = ''; // Önceki içeriği temizle
+                        advisorListDiv.appendChild(advisorTable); // Listeyi ekle
                     } else {
-                        const errorData = await response.json();
-                        courseListContainer.innerHTML = <p>Failed to fetch courses: ${errorData.message || "Unexpected error"}</p>;
+                        advisorListDiv.innerHTML = '<p>Failed to load advisors. Please try again later.</p>';
                     }
                 } catch (error) {
                     console.error('Error:', error);
-                    courseListContainer.innerHTML = '<p>An unexpected error occurred.</p>';
+                    advisorListDiv.innerHTML = '<p>An error occurred while loading the advisor list.</p>';
                 }
             });
         </script>
@@ -358,14 +327,14 @@
                     return;
                 }
 
-                const confirmation = confirm(Are you sure you want to delete Advisor with ID ${advisorID}?);
+                const confirmation = confirm(`Are you sure you want to delete Advisor with ID ${advisorID}?`);
                 if (!confirmation) {
                     return;
                 }
 
                 try {
                     // API'ye DELETE isteği gönder
-                    const response = await fetch(/api/AdvisorController/${advisorID}, {
+                    const response = await fetch(`/api/AdvisorController/${advisorID}`, {
                         method: 'DELETE'
                     });
 
@@ -401,20 +370,21 @@
             document.getElementById('removeCourseButton').addEventListener('click', async () => {
                 const courseID = document.getElementById('removeCourseID').value;
 
-                if (!courseID) {
+                // Validation: Geçerli bir ID kontrolü
+                if (!courseID || isNaN(courseID) || parseInt(courseID) <= 0) {
                     alert('Please enter a valid Course ID.');
                     return;
                 }
 
-                const confirmation = confirm(Are you sure you want to delete the Course with ID ${courseID}?);
+                const confirmation = confirm(`Are you sure you want to delete the Course with ID ${courseID}?`);
                 if (!confirmation) {
                     return;
                 }
 
                 try {
                     // API'ye DELETE isteği gönder
-                    const response = await fetch(/api/Courses/${courseID}, {
-                        method: 'DELETE'
+                    const response = await fetch(`/api/Courses/${courseID}`, {
+                    method: 'DELETE'
                     });
 
                     if (response.ok) {
@@ -425,8 +395,8 @@
                         alert('Failed to remove course: ' + (errorData.message || "Unexpected error"));
                     }
                 } catch (error) {
-                    console.error('Error:', error);
-                    alert('An unexpected error occurred.');
+                    console.error('Error:', error.message);
+                    alert('The course is actively being used and cannot be deleted.');
                 }
             });
         </script>

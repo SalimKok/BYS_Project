@@ -3,16 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\LENOVO\\source\\repos\\bysproject\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{FBB6BCE6-8A4B-4916-97B2-67CC5824C5AF}|Project.csproj|c:\\users\\lenovo\\source\\repos\\bysproject\\views\\students\\selectcourses.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{FBB6BCE6-8A4B-4916-97B2-67CC5824C5AF}|Project.csproj|solutionrelative:views\\students\\selectcourses.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{FBB6BCE6-8A4B-4916-97B2-67CC5824C5AF}|Project.csproj|c:\\users\\lenovo\\source\\repos\\bysproject\\controllers\\studentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FBB6BCE6-8A4B-4916-97B2-67CC5824C5AF}|Project.csproj|solutionrelative:controllers\\studentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FBB6BCE6-8A4B-4916-97B2-67CC5824C5AF}|Project.csproj|c:\\users\\lenovo\\source\\repos\\bysproject\\views\\students\\courseselection.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{FBB6BCE6-8A4B-4916-97B2-67CC5824C5AF}|Project.csproj|solutionrelative:views\\students\\courseselection.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{FBB6BCE6-8A4B-4916-97B2-67CC5824C5AF}|Project.csproj|c:\\users\\lenovo\\source\\repos\\bysproject\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FBB6BCE6-8A4B-4916-97B2-67CC5824C5AF}|Project.csproj|solutionrelative:controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FBB6BCE6-8A4B-4916-97B2-67CC5824C5AF}|Project.csproj|c:\\users\\lenovo\\source\\repos\\bysproject\\views\\account\\loginuser.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{FBB6BCE6-8A4B-4916-97B2-67CC5824C5AF}|Project.csproj|solutionrelative:views\\account\\loginuser.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{FBB6BCE6-8A4B-4916-97B2-67CC5824C5AF}|Project.csproj|c:\\users\\lenovo\\source\\repos\\bysproject\\project.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{FBB6BCE6-8A4B-4916-97B2-67CC5824C5AF}|Project.csproj|solutionrelative:project.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FBB6BCE6-8A4B-4916-97B2-67CC5824C5AF}|Project.csproj|c:\\users\\lenovo\\source\\repos\\bysproject\\views\\admin\\adminpanel.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FBB6BCE6-8A4B-4916-97B2-67CC5824C5AF}|Project.csproj|solutionrelative:views\\admin\\adminpanel.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,45 +26,58 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "SelectCourses.cshtml",
-              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\bysproject\\Views\\Students\\SelectCourses.cshtml",
-              "RelativeDocumentMoniker": "Views\\Students\\SelectCourses.cshtml",
-              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\bysproject\\Views\\Students\\SelectCourses.cshtml",
-              "RelativeToolTip": "Views\\Students\\SelectCourses.cshtml",
-              "ViewState": "AgIAAGIAAAAAAAAAAAAQwIMAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "Project",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\bysproject\\Project.csproj",
+              "RelativeDocumentMoniker": "Project.csproj",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\bysproject\\Project.csproj",
+              "RelativeToolTip": "Project.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-12-23T13:07:33.044Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AdminPanel.cshtml",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\bysproject\\Views\\Admin\\AdminPanel.cshtml",
+              "RelativeDocumentMoniker": "Views\\Admin\\AdminPanel.cshtml",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\bysproject\\Views\\Admin\\AdminPanel.cshtml",
+              "RelativeToolTip": "Views\\Admin\\AdminPanel.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEoCAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-22T19:09:14.501Z",
+              "WhenOpened": "2024-12-23T13:06:06.843Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "StudentsController.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\bysproject\\Controllers\\StudentsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\StudentsController.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\bysproject\\Controllers\\StudentsController.cs",
+              "RelativeToolTip": "Controllers\\StudentsController.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAgwCcAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-23T13:05:07.375Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "CourseSelection.cshtml",
-              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\bysproject\\Views\\Students\\CourseSelection.cshtml",
-              "RelativeDocumentMoniker": "Views\\Students\\CourseSelection.cshtml",
-              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\bysproject\\Views\\Students\\CourseSelection.cshtml",
-              "RelativeToolTip": "Views\\Students\\CourseSelection.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-22T18:59:30.196Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "LoginUser.cshtml",
-              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\bysproject\\Views\\Account\\LoginUser.cshtml",
-              "RelativeDocumentMoniker": "Views\\Account\\LoginUser.cshtml",
-              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\bysproject\\Views\\Account\\LoginUser.cshtml",
-              "RelativeToolTip": "Views\\Account\\LoginUser.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-22T18:57:30.823Z",
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\bysproject\\Controllers\\AdminController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AdminController.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\bysproject\\Controllers\\AdminController.cs",
+              "RelativeToolTip": "Controllers\\AdminController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-23T13:04:43.009Z",
               "EditorCaption": ""
             }
           ]

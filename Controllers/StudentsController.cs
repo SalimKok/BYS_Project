@@ -64,14 +64,7 @@ namespace Project.Controllers
                 if (existingRecords.Any())
                 {
                     // Önceki derslerin kotasını arttır
-                    foreach (var record in existingRecords)
-                    {
-                        var course = await _context.Courses.FindAsync(record.CourseID);
-                        if (course != null)
-                        {
-                            course.Quota += 1; // Silinen dersin kotasını arttır
-                        }
-                    }
+
 
                     _context.UnapprovedSelections.RemoveRange(existingRecords);
                 }
@@ -93,18 +86,6 @@ namespace Project.Controllers
                     };
 
                     // Yeni dersin kotasını azalt
-                    var course = await _context.Courses.FindAsync(courseId);
-                    if (course != null)
-                    {
-                        if (course.Quota > 0)
-                        {
-                            course.Quota -= 1; // Seçilen dersin kotasını azalt
-                        }
-                        else
-                        {
-                            return BadRequest($"The course {course.CourseName} is full and cannot be selected.");
-                        }
-                    }
 
                     _context.UnapprovedSelections.Add(unapprovedSelection);
                 }
@@ -115,6 +96,14 @@ namespace Project.Controllers
 
                 if (existingStudentRecords.Any())
                 {
+                    foreach (var record in existingStudentRecords)
+                    {
+                        var course = await _context.Courses.FindAsync(record.CourseID);
+                        if (course != null)
+                        {
+                            course.Quota += 1; // Silinen dersin kotasını arttır
+                        }
+                    }
                     _context.StudentCourseSelections.RemoveRange(existingStudentRecords);
                 }
 
@@ -130,6 +119,18 @@ namespace Project.Controllers
                     };
 
                     _context.StudentCourseSelections.Add(studentCourseSelection);
+                    var course = await _context.Courses.FindAsync(courseId);
+                    if (course != null)
+                    {
+                        if (course.Quota > 0)
+                        {
+                            course.Quota -= 1; // Seçilen dersin kotasını azalt
+                        }
+                        else
+                        {
+                            return BadRequest($"The course {course.CourseName} is full and cannot be selected.");
+                        }
+                    }
                 }
 
                 // Değişiklikleri kaydet
@@ -152,10 +153,10 @@ namespace Project.Controllers
 
             var student = await _context.Students
                                          .Include(s => s.StudentCourseSelections) // Seçilen dersler
-                                         .ThenInclude(sc => sc.Course)       // Ders bilgileri
+                                             .ThenInclude(sc => sc.Course)       // Ders bilgileri
                                          .Include(s => s.Advisor)                // Danışman bilgisi
                                          .Include(s => s.UnapprovedSelections)   // Onaylanmamış dersler
-                                         .ThenInclude(us => us.Course)      // Ders bilgileri
+                                             .ThenInclude(us => us.Course)      // Ders bilgileri
                                          .FirstOrDefaultAsync(s => s.StudentID == id);
 
             // Öğrenci bulunamadıysa hata mesajı gönder
