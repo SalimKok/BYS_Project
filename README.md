@@ -48,7 +48,7 @@ Dalı gönderin:
 git push origin ozellik-adi
 Bir pull request açın.
 Lisans
-Bu proje Apache-2.0 Lisansı altında lisanslanmıştır. Ayrıntılar için LICENSE dosyasına bakın.
+Bu proje MIT Lisansı altında lisanslanmıştır. Ayrıntılar için LICENSE dosyasına bakın.
 
 İletişim
 Sorularınız veya önerileriniz için GitHub deposu üzerinden ulaşabilirsiniz.
